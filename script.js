@@ -51,5 +51,39 @@ carousel.addEventListener('keydown', event => {
 });
 
 document.getElementById('year').textContent = new Date().getFullYear();
+
+const storeStatus = document.getElementById('store-status');
+const storeTimeFormatter = new Intl.DateTimeFormat('en-CA', {
+  timeZone: 'America/Halifax',
+  hour: '2-digit',
+  minute: '2-digit',
+  hourCycle: 'h23'
+});
+
+function updateStoreStatus() {
+  const timeParts = storeTimeFormatter.formatToParts(new Date());
+  const hour = Number(timeParts.find(part => part.type === 'hour').value);
+  const minute = Number(timeParts.find(part => part.type === 'minute').value);
+  const minutesSinceMidnight = hour * 60 + minute;
+  let label = 'Closed';
+  let state = 'closed';
+
+  if (minutesSinceMidnight >= 8 * 60 && minutesSinceMidnight < 9 * 60) {
+    label = 'Opening soon';
+    state = 'soon';
+  } else if (minutesSinceMidnight >= 9 * 60 && minutesSinceMidnight < 19 * 60) {
+    label = 'Open today';
+    state = 'open';
+  } else if (minutesSinceMidnight >= 19 * 60 && minutesSinceMidnight < 20 * 60) {
+    label = 'Closing soon';
+    state = 'soon';
+  }
+
+  storeStatus.querySelector('strong').textContent = label;
+  storeStatus.dataset.state = state;
+}
+
+updateStoreStatus();
+setInterval(updateStoreStatus, 60 * 1000);
 showSlide(0);
 startTimer();

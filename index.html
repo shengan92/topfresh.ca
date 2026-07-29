@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Top Fresh Market - fresh Asian groceries, produce, seafood, snacks, and pantry favourites in Toronto.">
-  <title>Top Fresh Market | Asian Grocery in Toronto</title>
+-  <meta name="description" content="Top Fresh Market - fresh Asian groceries, produce, seafood, snacks, and pantry favourites in Toronto.">
+-  <title>Top Fresh Market | Asian Grocery in Toronto</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&amp;family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
@@ -34,8 +34,10 @@
           <a class="button primary" href="#visit">Plan your visit</a>
           <a class="button secondary" href="#departments">Explore the store</a>
         </div>
-        <div class="open-note"><span aria-hidden="true"></span><strong>Open today</strong> ú Visit us in Toronto</div>
-      </div>
++        <div class="open-note" id="store-status" role="status">
++          <span class="status-dot" aria-hidden="true"></span><strong>Checking hours...</strong>
++          <span class="status-location">Visit us at 1 Flamingo Drive, Halifax</span>
++        </div>
 
       <div class="carousel" tabindex="0" aria-roledescription="carousel" aria-label="Top Fresh Market highlights">
         <div class="slides" aria-live="polite">
@@ -89,7 +91,7 @@
     <section class="visit" id="visit" aria-labelledby="visit-title">
       <div><span class="eyebrow light">Come say hello</span><h2 id="visit-title">Your next fresh find<br>is just around the corner.</h2></div>
       <div class="visit-details">
-        <p><span>Location</span><strong>Toronto, Ontario</strong></p>
+        <p><span>Location</span><a href="https://www.google.com/maps/search/?api=1&amp;query=1%20Flamingo%20Drive%2C%20Halifax%2C%20Nova%20Scotia"><strong>1 Flamingo Drive<br>Halifax, Nova Scotia</strong></a></p>
         <p><span>Questions?</span><a href="mailto:rich@topfresh.ca">rich@topfresh.ca</a></p>
         <a class="button white" href="mailto:rich@topfresh.ca">Contact us</a>
       </div>
