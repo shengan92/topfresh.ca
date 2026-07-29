@@ -1,118 +1,266 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Top Fresh Market - fresh Asian groceries, produce, seafood, snacks, and pantry favourites in Halifax.">
-  <title>Top Fresh Market | Asian Grocery in Halifax</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&amp;family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Top Fresh Market home">
-      <span class="brand-mark" aria-hidden="true">TF</span>
-      <span><strong>Top Fresh</strong><small>Market</small></span>
-    </a>
-    <nav aria-label="Main navigation" data-i18n-aria="navLabel">
-      <a href="#departments">Departments</a>
-      <a href="#visit">Visit us</a>
-      <a class="nav-cta" href="tel:+14165311139">Call store</a>
-      <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch to Mandarin Chinese">中文</button>
-    </nav>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Top Fresh Market - fresh Asian groceries, produce, seafood, snacks, and pantry favourites in Halifax."
+    />
+    <title>Top Fresh Market | Asian Grocery in Halifax</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&amp;family=Noto+Sans:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Top Fresh Market home">
+        <span class="brand-mark" aria-hidden="true">TF</span>
+        <span><strong>Top Fresh</strong><small>Market</small></span>
+      </a>
+      <nav aria-label="Main navigation" data-i18n-aria="navLabel">
+        <a href="#departments">Departments</a>
+        <a href="#visit">Visit us</a>
+        <a class="nav-cta" href="tel:+14165311139">Call store</a>
+        <button
+          class="language-toggle"
+          id="language-toggle"
+          type="button"
+          aria-label="Switch to Mandarin Chinese"
+        >
+          中文
+        </button>
+      </nav>
+    </header>
 
-  <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <span class="eyebrow">Your neighbourhood Asian grocer</span>
-        <h1 id="hero-title">Fresh finds.<br><span>Flavours from home.</span></h1>
-        <p>Discover crisp produce, live seafood, pantry staples, and the snacks you love-all under one roof.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#visit">Plan your visit</a>
-          <a class="button secondary" href="#departments">Explore the store</a>
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <span class="eyebrow">Your neighbourhood Asian grocer</span>
+          <h1 id="hero-title">
+            Fresh finds.<br /><span>Flavours from home.</span>
+          </h1>
+          <p>
+            Discover crisp produce, live seafood, pantry staples, and the snacks
+            you love-all under one roof.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#visit">Plan your visit</a>
+            <a class="button secondary" href="#departments"
+              >Explore the store</a
+            >
+          </div>
+          <div class="open-note" id="store-status" role="status">
+            <span class="status-dot" aria-hidden="true"></span
+            ><strong>Checking hours...</strong>
+            <span class="status-location"
+              >Visit us at 1 Flamingo Drive, Halifax</span
+            >
+          </div>
         </div>
-        <div class="open-note" id="store-status" role="status">
-          <span class="status-dot" aria-hidden="true"></span><strong>Checking hours...</strong>
-          <span class="status-location">Visit us at 1 Flamingo Drive, Halifax</span>
+
+        <div
+          class="carousel"
+          tabindex="0"
+          aria-roledescription="carousel"
+          aria-label="Top Fresh Market highlights"
+        >
+          <div class="slides" aria-live="polite">
+            <figure class="slide active">
+              <img
+                src="images/unnamed.jpg"
+                alt="The front entrance of Top Fresh Market"
+                fetchpriority="high"
+              />
+              <figcaption>
+                <strong>Welcome to Top Fresh</strong
+                ><span>Your local market for everyday favourites</span>
+              </figcaption>
+            </figure>
+            <figure class="slide">
+              <img
+                src="images/Screenshot 2026-07-29 025610.png"
+                alt="A colourful selection of fresh fruit"
+              />
+              <figcaption>
+                <strong>Fresh produce, every day</strong
+                ><span>Familiar favourites and exciting finds</span>
+              </figcaption>
+            </figure>
+            <figure class="slide">
+              <img
+                src="images/Screenshot 2026-07-29 025552.png"
+                alt="Shelves stocked with Asian snacks and pantry foods"
+              />
+              <figcaption>
+                <strong>A pantry full of possibilities</strong
+                ><span>Snacks, noodles, sauces, and more</span>
+              </figcaption>
+            </figure>
+            <figure class="slide">
+              <img
+                src="images/Screenshot 2026-07-29 025656.png"
+                alt="Fresh cooked crabs on display"
+              />
+              <figcaption>
+                <strong>Seafood worth sharing</strong
+                ><span>Fresh choices for the family table</span>
+              </figcaption>
+            </figure>
+            <figure class="slide">
+              <img
+                src="images/Screenshot 2026-07-29 025721.png"
+                alt="Fresh purple mangosteens"
+              />
+              <figcaption>
+                <strong>Taste something new</strong
+                ><span>Seasonal fruit from around the world</span>
+              </figcaption>
+            </figure>
+            <figure class="slide">
+              <img
+                src="images/Screenshot 2026-07-29 025524.png"
+                alt="Fresh tomatoes on sale"
+              />
+              <figcaption>
+                <strong>Great value, close to home</strong
+                ><span>Fresh specials for your weekly shop</span>
+              </figcaption>
+            </figure>
+          </div>
+          <button
+            class="carousel-button previous"
+            type="button"
+            aria-label="Previous image"
+          >
+            <
+          </button>
+          <button
+            class="carousel-button next"
+            type="button"
+            aria-label="Next image"
+          >
+            >
+          </button>
+          <div class="carousel-footer">
+            <div class="dots" aria-label="Choose a slide"></div>
+            <button
+              class="pause-button"
+              type="button"
+              aria-label="Pause slideshow"
+            >
+              ?
+            </button>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="carousel" tabindex="0" aria-roledescription="carousel" aria-label="Top Fresh Market highlights">
-        <div class="slides" aria-live="polite">
-          <figure class="slide active">
-            <img src="images/unnamed.jpg" alt="The front entrance of Top Fresh Market" fetchpriority="high">
-            <figcaption><strong>Welcome to Top Fresh</strong><span>Your local market for everyday favourites</span></figcaption>
-          </figure>
-          <figure class="slide">
-            <img src="images/Screenshot 2026-07-29 025610.png" alt="A colourful selection of fresh fruit">
-            <figcaption><strong>Fresh produce, every day</strong><span>Familiar favourites and exciting finds</span></figcaption>
-          </figure>
-          <figure class="slide">
-            <img src="images/Screenshot 2026-07-29 025552.png" alt="Shelves stocked with Asian snacks and pantry foods">
-            <figcaption><strong>A pantry full of possibilities</strong><span>Snacks, noodles, sauces, and more</span></figcaption>
-          </figure>
-          <figure class="slide">
-            <img src="images/Screenshot 2026-07-29 025656.png" alt="Fresh cooked crabs on display">
-            <figcaption><strong>Seafood worth sharing</strong><span>Fresh choices for the family table</span></figcaption>
-          </figure>
-          <figure class="slide">
-            <img src="images/Screenshot 2026-07-29 025721.png" alt="Fresh purple mangosteens">
-            <figcaption><strong>Taste something new</strong><span>Seasonal fruit from around the world</span></figcaption>
-          </figure>
-          <figure class="slide">
-            <img src="images/Screenshot 2026-07-29 025524.png" alt="Fresh tomatoes on sale">
-            <figcaption><strong>Great value, close to home</strong><span>Fresh specials for your weekly shop</span></figcaption>
-          </figure>
+      <section
+        class="departments"
+        id="departments"
+        aria-labelledby="departments-title"
+      >
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Shop the market</span>
+            <h2 id="departments-title">Good food starts here</h2>
+          </div>
+          <p>
+            Quality ingredients for quick weeknight meals, family celebrations,
+            and everything between.
+          </p>
         </div>
-        <button class="carousel-button previous" type="button" aria-label="Previous image"><</button>
-        <button class="carousel-button next" type="button" aria-label="Next image">></button>
-        <div class="carousel-footer">
-          <div class="dots" aria-label="Choose a slide"></div>
-          <button class="pause-button" type="button" aria-label="Pause slideshow">?</button>
+        <div class="department-grid">
+          <article>
+            <span class="department-icon produce" aria-hidden="true">?</span>
+            <h3>Fresh produce</h3>
+            <p>Seasonal greens, tropical fruit, and everyday essentials.</p>
+          </article>
+          <article>
+            <span class="department-icon seafood" aria-hidden="true">?</span>
+            <h3>Seafood &amp; meat</h3>
+            <p>Fresh selections prepared for your favourite recipes.</p>
+          </article>
+          <article>
+            <span class="department-icon pantry" aria-hidden="true">?</span>
+            <h3>Pantry staples</h3>
+            <p>Rice, noodles, sauces, spices, and hard-to-find ingredients.</p>
+          </article>
+          <article>
+            <span class="department-icon snacks" aria-hidden="true">?</span>
+            <h3>Snacks &amp; drinks</h3>
+            <p>Sweet, savoury, refreshing, and always fun to discover.</p>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="departments" id="departments" aria-labelledby="departments-title">
-      <div class="section-heading">
-        <div><span class="eyebrow">Shop the market</span><h2 id="departments-title">Good food starts here</h2></div>
-        <p>Quality ingredients for quick weeknight meals, family celebrations, and everything between.</p>
-      </div>
-      <div class="department-grid">
-        <article><span class="department-icon produce" aria-hidden="true">?</span><h3>Fresh produce</h3><p>Seasonal greens, tropical fruit, and everyday essentials.</p></article>
-        <article><span class="department-icon seafood" aria-hidden="true">?</span><h3>Seafood &amp; meat</h3><p>Fresh selections prepared for your favourite recipes.</p></article>
-        <article><span class="department-icon pantry" aria-hidden="true">?</span><h3>Pantry staples</h3><p>Rice, noodles, sauces, spices, and hard-to-find ingredients.</p></article>
-        <article><span class="department-icon snacks" aria-hidden="true">?</span><h3>Snacks &amp; drinks</h3><p>Sweet, savoury, refreshing, and always fun to discover.</p></article>
-      </div>
-    </section>
+      <section class="visit" id="visit" aria-labelledby="visit-title">
+        <div>
+          <span class="eyebrow light">Come say hello</span>
+          <h2 id="visit-title">
+            Your next fresh find<br />is just around the corner.
+          </h2>
+        </div>
+        <div class="visit-details">
+          <p>
+            <span>Location</span
+            ><a
+              href="https://www.google.com/maps/search/?api=1&amp;query=1%20Flamingo%20Drive%2C%20Halifax%2C%20Nova%20Scotia"
+              ><strong>1 Flamingo Drive<br />Halifax, Nova Scotia</strong></a
+            >
+          </p>
+          <p>
+            <span>Questions?</span
+            ><a href="mailto:rich@topfresh.ca">rich@topfresh.ca</a>
+          </p>
+          <a class="button white" href="mailto:rich@topfresh.ca">Contact us</a>
+        </div>
+      </section>
+    </main>
 
-    <section class="visit" id="visit" aria-labelledby="visit-title">
-      <div><span class="eyebrow light">Come say hello</span><h2 id="visit-title">Your next fresh find<br>is just around the corner.</h2></div>
-      <div class="visit-details">
-        <p><span>Location</span><a href="https://www.google.com/maps/search/?api=1&amp;query=1%20Flamingo%20Drive%2C%20Halifax%2C%20Nova%20Scotia"><strong>1 Flamingo Drive<br>Halifax, Nova Scotia</strong></a></p>
-        <p><span>Questions?</span><a href="mailto:rich@topfresh.ca">rich@topfresh.ca</a></p>
-        <a class="button white" href="mailto:rich@topfresh.ca">Contact us</a>
+    <footer>
+      <a class="brand footer-brand" href="#top"
+        ><span class="brand-mark" aria-hidden="true">TF</span
+        ><span><strong>Top Fresh</strong><small>Market</small></span></a
+      >
+      <p>Fresh food. Friendly faces. Local heart.</p>
+      <p>© <span id="year"></span> Top Fresh Market</p>
+    </footer>
+    <div class="language-modal" id="language-modal" hidden>
+      <div
+        class="language-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="language-title"
+        aria-describedby="language-description"
+      >
+        <div class="language-symbol" aria-hidden="true">文</div>
+        <p class="dialog-eyebrow">WELCOME · 欢迎</p>
+        <h2 id="language-title">Choose your language</h2>
+        <p id="language-description">
+          Please select your preferred language.<br /><span
+            >请选择您的首选语言。</span
+          >
+        </p>
+        <div class="language-options">
+          <button
+            class="language-option primary-language"
+            type="button"
+            data-language="en"
+          >
+            <strong>English</strong><span>Continue in English</span>
+          </button>
+          <button class="language-option" type="button" data-language="zh">
+            <strong>中文</strong><span>使用中文继续</span>
+          </button>
+        </div>
+        <small>Your choice will be remembered. · 系统将记住您的选择。</small>
       </div>
-    </section>
-  </main>
-
-  <footer><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">TF</span><span><strong>Top Fresh</strong><small>Market</small></span></a><p>Fresh food. Friendly faces. Local heart.</p><p>© <span id="year"></span> Top Fresh Market</p></footer>
-  <div class="language-modal" id="language-modal" hidden>
-    <div class="language-dialog" role="dialog" aria-modal="true" aria-labelledby="language-title" aria-describedby="language-description">
-      <div class="language-symbol" aria-hidden="true">文</div>
-      <p class="dialog-eyebrow">WELCOME · 欢迎</p>
-      <h2 id="language-title">Choose your language</h2>
-      <p id="language-description">Please select your preferred language.<br><span>请选择您的首选语言。</span></p>
-      <div class="language-options">
-        <button class="language-option primary-language" type="button" data-language="en"><strong>English</strong><span>Continue in English</span></button>
-        <button class="language-option" type="button" data-language="zh"><strong>中文</strong><span>使用中文继续</span></button>
-      </div>
-      <small>Your choice will be remembered. · 系统将记住您的选择。</small>
     </div>
-  </div>
-</body>
+  </body>
 </html>
