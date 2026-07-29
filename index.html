@@ -1,136 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Under Maintenance</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #2d7a4f 0%, #4a9d6f 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .container {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-            padding: 60px 40px;
-            text-align: center;
-            max-width: 600px;
-            width: 100%;
-        }
-
-        .icon {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 30px;
-            background: #2d7a4f;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .icon svg {
-            width: 45px;
-            height: 45px;
-            fill: white;
-        }
-
-        h1 {
-            color: #2d7a4f;
-            font-size: 32px;
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-
-        p {
-            color: #666;
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
-
-        .email {
-            color: #2d7a4f;
-            text-decoration: none;
-            font-weight: 500;
-            border-bottom: 2px solid transparent;
-            transition: border-bottom 0.3s ease;
-        }
-
-        .email:hover {
-            border-bottom: 2px solid #2d7a4f;
-        }
-
-        .progress-bar {
-            width: 100%;
-            height: 6px;
-            background: #e0e0e0;
-            border-radius: 3px;
-            overflow: hidden;
-            margin-top: 40px;
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #2d7a4f 0%, #4a9d6f 100%);
-            width: 0%;
-            fill: 50%;
-        }
-
-        @keyframes progress {
-            0% { width: 0%; }
-            50% { width: 70%; }
-            100% { width: 0%; }
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 40px 25px;
-            }
-
-            h1 {
-                font-size: 26px;
-            }
-
-            p {
-                font-size: 15px;
-            }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Top Fresh Market - fresh Asian groceries, produce, seafood, snacks, and pantry favourites in Toronto.">
+  <title>Top Fresh Market | Asian Grocery in Toronto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&amp;family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-            </svg>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Top Fresh Market home">
+      <span class="brand-mark" aria-hidden="true">TF</span>
+      <span><strong>Top Fresh</strong><small>Market</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#departments">Departments</a>
+      <a href="#visit">Visit us</a>
+      <a class="nav-cta" href="tel:+14165311139">Call store</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow">Your neighbourhood Asian grocer</span>
+        <h1 id="hero-title">Fresh finds.<br><span>Flavours from home.</span></h1>
+        <p>Discover crisp produce, live seafood, pantry staples, and the snacks you love-all under one roof.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#visit">Plan your visit</a>
+          <a class="button secondary" href="#departments">Explore the store</a>
         </div>
-        <h1>We'll Be Back Soon!</h1>
-        <p>
-            Our website is currently undergoing scheduled maintenance to bring you a better experience. 
-            We apologize for any inconvenience and appreciate your patience.
-        </p>
-        <p>
-            If you need immediate assistance, please contact us at 
-            <a href="mailto:rich@topfresh.ca" class="email">rich@topfresh.ca</a>
-            !
-        </p>
-        <div class="progress-bar">
-            <div class="progress-fill"></div>
+        <div class="open-note"><span aria-hidden="true"></span><strong>Open today</strong> ú Visit us in Toronto</div>
+      </div>
+
+      <div class="carousel" tabindex="0" aria-roledescription="carousel" aria-label="Top Fresh Market highlights">
+        <div class="slides" aria-live="polite">
+          <figure class="slide active">
+            <img src="images/unnamed.jpg" alt="The front entrance of Top Fresh Market" fetchpriority="high">
+            <figcaption><strong>Welcome to Top Fresh</strong><span>Your local market for everyday favourites</span></figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="images/Screenshot 2026-07-29 025610.png" alt="A colourful selection of fresh fruit">
+            <figcaption><strong>Fresh produce, every day</strong><span>Familiar favourites and exciting finds</span></figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="images/Screenshot 2026-07-29 025552.png" alt="Shelves stocked with Asian snacks and pantry foods">
+            <figcaption><strong>A pantry full of possibilities</strong><span>Snacks, noodles, sauces, and more</span></figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="images/Screenshot 2026-07-29 025656.png" alt="Fresh cooked crabs on display">
+            <figcaption><strong>Seafood worth sharing</strong><span>Fresh choices for the family table</span></figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="images/Screenshot 2026-07-29 025721.png" alt="Fresh purple mangosteens">
+            <figcaption><strong>Taste something new</strong><span>Seasonal fruit from around the world</span></figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="images/Screenshot 2026-07-29 025524.png" alt="Fresh tomatoes on sale">
+            <figcaption><strong>Great value, close to home</strong><span>Fresh specials for your weekly shop</span></figcaption>
+          </figure>
         </div>
-    </div>
+        <button class="carousel-button previous" type="button" aria-label="Previous image"><</button>
+        <button class="carousel-button next" type="button" aria-label="Next image">></button>
+        <div class="carousel-footer">
+          <div class="dots" aria-label="Choose a slide"></div>
+          <button class="pause-button" type="button" aria-label="Pause slideshow">?</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="departments" id="departments" aria-labelledby="departments-title">
+      <div class="section-heading">
+        <div><span class="eyebrow">Shop the market</span><h2 id="departments-title">Good food starts here</h2></div>
+        <p>Quality ingredients for quick weeknight meals, family celebrations, and everything between.</p>
+      </div>
+      <div class="department-grid">
+        <article><span class="department-icon produce" aria-hidden="true">?</span><h3>Fresh produce</h3><p>Seasonal greens, tropical fruit, and everyday essentials.</p></article>
+        <article><span class="department-icon seafood" aria-hidden="true">?</span><h3>Seafood &amp; meat</h3><p>Fresh selections prepared for your favourite recipes.</p></article>
+        <article><span class="department-icon pantry" aria-hidden="true">?</span><h3>Pantry staples</h3><p>Rice, noodles, sauces, spices, and hard-to-find ingredients.</p></article>
+        <article><span class="department-icon snacks" aria-hidden="true">?</span><h3>Snacks &amp; drinks</h3><p>Sweet, savoury, refreshing, and always fun to discover.</p></article>
+      </div>
+    </section>
+
+    <section class="visit" id="visit" aria-labelledby="visit-title">
+      <div><span class="eyebrow light">Come say hello</span><h2 id="visit-title">Your next fresh find<br>is just around the corner.</h2></div>
+      <div class="visit-details">
+        <p><span>Location</span><strong>Toronto, Ontario</strong></p>
+        <p><span>Questions?</span><a href="mailto:rich@topfresh.ca">rich@topfresh.ca</a></p>
+        <a class="button white" href="mailto:rich@topfresh.ca">Contact us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">TF</span><span><strong>Top Fresh</strong><small>Market</small></span></a><p>Fresh food. Friendly faces. Local heart.</p><p>c <span id="year"></span> Top Fresh Market</p></footer>
 </body>
 </html>
