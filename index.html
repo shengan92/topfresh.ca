@@ -17,10 +17,11 @@
       <span class="brand-mark" aria-hidden="true">TF</span>
       <span><strong>Top Fresh</strong><small>Market</small></span>
     </a>
-    <nav aria-label="Main navigation">
+    <nav aria-label="Main navigation" data-i18n-aria="navLabel">
       <a href="#departments">Departments</a>
       <a href="#visit">Visit us</a>
       <a class="nav-cta" href="tel:+14165311139">Call store</a>
+      <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch to Mandarin Chinese">中文</button>
     </nav>
   </header>
 
@@ -99,6 +100,19 @@
     </section>
   </main>
 
-  <footer><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">TF</span><span><strong>Top Fresh</strong><small>Market</small></span></a><p>Fresh food. Friendly faces. Local heart.</p><p>c <span id="year"></span> Top Fresh Market</p></footer>
+  <footer><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">TF</span><span><strong>Top Fresh</strong><small>Market</small></span></a><p>Fresh food. Friendly faces. Local heart.</p><p>© <span id="year"></span> Top Fresh Market</p></footer>
+  <div class="language-modal" id="language-modal" hidden>
+    <div class="language-dialog" role="dialog" aria-modal="true" aria-labelledby="language-title" aria-describedby="language-description">
+      <div class="language-symbol" aria-hidden="true">文</div>
+      <p class="dialog-eyebrow">WELCOME · 欢迎</p>
+      <h2 id="language-title">Choose your language</h2>
+      <p id="language-description">Please select your preferred language.<br><span>请选择您的首选语言。</span></p>
+      <div class="language-options">
+        <button class="language-option primary-language" type="button" data-language="en"><strong>English</strong><span>Continue in English</span></button>
+        <button class="language-option" type="button" data-language="zh"><strong>中文</strong><span>使用中文继续</span></button>
+      </div>
+      <small>Your choice will be remembered. · 系统将记住您的选择。</small>
+    </div>
+  </div>
 </body>
 </html>
